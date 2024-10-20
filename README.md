@@ -1,1 +1,2 @@
-# my_blog
+# my blog
+[Go to Installation](#installation)
