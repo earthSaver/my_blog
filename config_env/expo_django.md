@@ -1,5 +1,5 @@
 # Expo + Django
-ensure your physical phone and computer are under the same wifi
+**ensure your physical phone and computer are under the same wifi**
 ## Django
 ### 1. set up launch.json
 in .vscode/launch.json, for the runsever args,change the ip address to `0.0.0.0`
