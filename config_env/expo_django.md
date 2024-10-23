@@ -22,7 +22,21 @@ in .vscode/launch.json, for the runsever args,change the ip address to `0.0.0.0`
     ]
 }
 ```
+make sure the project is running at http://0.0.0.0:8001/
+```text
+Performing system checks...
 
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+
+October 17, 2024 - 15:50:53
+Django version 5.1, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+````
 ### 2. set up setting.py
 in setting.py file, you need to set up CORS
 ```python
@@ -40,20 +54,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 ```
 ### 3. get local ip address
-run the project and get the local address `http://192.168.1.224:8001`, for example:
-```text
-Performing system checks...
+get the local address `http://192.168.1.224:8001`, for example on windows terminal:
 
-System check identified no issues (0 silenced).
-
-You have unapplied migrations; your app may not work properly until they are applied.
-Run 'python manage.py migrate' to apply them.
-
-October 17, 2024 - 15:50:53
-Django version 5.1, using settings 'mysite.settings'
-Starting development server at http://192.168.1.224:8001
-Quit the server with CONTROL-C.
-```
+![image info](../images/get_local_ip.png)
 ## Expo 
 ### 1. Set up url in env
 in .env file, set up **EXPO_PUBLIC_API_URL (must use this name)**
